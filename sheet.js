@@ -16,13 +16,16 @@ await doc.loadInfo();
 
 const sheet = doc.sheetsById["0"];
 
-sheet.setHeaderRow(["nickname", "blog"]);
+await sheet.loadCells("A1:E10"); // 셀 범위를 로컬 캐시에 로드 - 셀 반환하지 않음
+console.log(sheet.cellStats); // nonEmpty, loaded, total
 
-await sheet.addRow({
-  nickname: "jgjgill",
-  blog: "https://jgjgill-blog.netlify.app/",
-});
+const a1 = sheet.getCell(0, 0); // zero-based index
+const a2 = sheet.getCell(1, 0);
 
-const rows = await sheet.getRows();
+console.log(a1.value, a2.value);
 
-console.log(rows[0].get("nickname"), rows[0].get("blog"));
+a1.value = "name";
+a2.value = "이종길";
+a1.textFormat = { bold: true };
+
+await sheet.saveUpdatedCells();
