@@ -1,0 +1,21 @@
+{
+  "name": "google-spreadsheet-playground",
+  "version": "1.0.0",
+  "main": "sheet.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jgjgill",
+  "license": "ISC",
+  "description": "google spreadsheet playground",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.7.0",
+    "google-spreadsheet": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
