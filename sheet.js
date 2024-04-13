@@ -14,4 +14,5 @@ const doc = new GoogleSpreadsheet(spreadsheetDocId, serviceAccountAuth);
 
 await doc.loadInfo();
 
-await doc.addSheet({ title: "새로운 시트" });
+const newSheet = doc.sheetsByTitle["새로운 시트"];
+await newSheet.delete();
