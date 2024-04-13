@@ -14,4 +14,4 @@ const doc = new GoogleSpreadsheet(spreadsheetDocId, serviceAccountAuth);
 
 await doc.loadInfo();
 
-console.log(doc.title);
+await doc.addSheet({ title: "새로운 시트" });
