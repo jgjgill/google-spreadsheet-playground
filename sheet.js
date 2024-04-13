@@ -14,5 +14,15 @@ const doc = new GoogleSpreadsheet(spreadsheetDocId, serviceAccountAuth);
 
 await doc.loadInfo();
 
-const newSheet = doc.sheetsByTitle["새로운 시트"];
-await newSheet.delete();
+const sheet = doc.sheetsById["0"];
+
+sheet.setHeaderRow(["nickname", "blog"]);
+
+await sheet.addRow({
+  nickname: "jgjgill",
+  blog: "https://jgjgill-blog.netlify.app/",
+});
+
+const rows = await sheet.getRows();
+
+console.log(rows[0].get("nickname"), rows[0].get("blog"));
