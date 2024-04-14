@@ -8,9 +8,14 @@
   "scripts": {
     "build": "npx tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "npmtool"
+  ],
   "author": "jgjgill",
   "license": "ISC",
+  "repository": "https://github.com/jgjgill/google-spreadsheet-playground",
+  "homepage": "https://github.com/jgjgill/google-spreadsheet-playground#readme",
   "description": "google spreadsheet playground",
   "dependencies": {
     "commander": "^12.0.0",
