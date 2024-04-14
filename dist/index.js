@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -62,5 +63,8 @@ if (options.mkdir) {
 }
 if (options.touch) {
     createFile(path_1.default.resolve(__dirname, options.touch));
+}
+if (!process.argv.slice(2).length) {
+    program.outputHelp();
 }
 //# sourceMappingURL=index.js.map

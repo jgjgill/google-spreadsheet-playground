@@ -1,7 +1,10 @@
 {
   "name": "google-spreadsheet-playground",
   "version": "1.0.0",
-  "main": "sheet.js",
+  "main": "dist/index.js",
+  "bin": {
+    "dirmanager": "./dist/index.js"
+  },
   "scripts": {
     "build": "npx tsc"
   },

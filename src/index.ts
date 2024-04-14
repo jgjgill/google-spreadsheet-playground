@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import figlet from "figlet";
 import { Command } from "commander";
 import fs from "fs";
@@ -57,4 +59,8 @@ if (options.mkdir) {
 
 if (options.touch) {
   createFile(path.resolve(__dirname, options.touch));
+}
+
+if (!process.argv.slice(2).length) {
+  program.outputHelp();
 }
