@@ -2,20 +2,23 @@
   "name": "google-spreadsheet-playground",
   "version": "1.0.0",
   "main": "sheet.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "jgjgill",
   "license": "ISC",
   "description": "google spreadsheet playground",
   "dependencies": {
+    "commander": "^12.0.0",
     "dotenv": "^16.4.5",
+    "figlet": "^1.7.0",
     "google-auth-library": "^9.7.0",
     "google-spreadsheet": "^4.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7"
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
   }
 }
