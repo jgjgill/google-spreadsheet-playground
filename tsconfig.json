@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "outDir": "dist",
     "strict": true,
-    "target": "es2016",
+    "target": "ES2016",
     "module": "commonjs",
     "sourceMap": true,
     "esModuleInterop": true,

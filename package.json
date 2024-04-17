@@ -6,7 +6,8 @@
     "dirmanager": "./dist/index.js"
   },
   "scripts": {
-    "build": "npx tsc"
+    "dev": "tsup --watch",
+    "build": "tsup"
   },
   "keywords": [
     "cli",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@types/figlet": "^1.5.8",
     "@types/node": "^20.12.7",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   }
 }
