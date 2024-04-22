@@ -1,0 +1,18 @@
+{
+  "name": "@jgjgill/create-google-spreadsheet",
+  "bin": {
+    "create-google-spreadsheet": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.12.7"
+  }
+}

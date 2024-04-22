@@ -1,13 +1,9 @@
 {
-  "name": "google-spreadsheet-playground",
-  "version": "1.0.1",
-  "main": "dist/index.js",
-  "bin": {
-    "dirmanager": "./dist/index.js"
-  },
+  "name": "@jgjgill/google-spreadsheet-monorepo",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup"
+    "cli": "pnpm --filter create-google-spreadsheet",
+    "playground-react": "pnpm --filter test-react"
   },
   "keywords": [
     "cli",
@@ -23,7 +19,9 @@
     "dotenv": "^16.4.5",
     "figlet": "^1.7.0",
     "google-auth-library": "^9.7.0",
-    "google-spreadsheet": "^4.1.1"
+    "google-spreadsheet": "^4.1.1",
+    "i18next": "^23.11.2",
+    "i18next-scanner": "^4.4.0"
   },
   "devDependencies": {
     "@types/figlet": "^1.5.8",
